@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: darkolivegreen;
+    text-align: center;
+    background: url(board.png);
+    background-size: cover;
+}
+h1{
+    top: 50px;
+    position: absolute;
+    right: 45%;
+    font-family: "Kablammo", serif;
+    font-optical-sizing: auto;
+    font-weight: 1000px;
+    font-style: normal;
+    font-size:50px;
+    font-variation-settings:
+      "MORF" 0;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    display: none;
+}
+button:hover{
+    cursor: pointer;}
+#score{
+    position: absolute;
+    right: 50%;
+    top: 20%;
+}
+#board{
+    height: 300px;
+    width: 750px;
+    padding-top: 250px;
+    /* background-color: saddlebrown; */
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#board div{
+    width: 60px;
+    height: 60px;
+    padding: 5px 10px;
+    /* background-color: cadetblue; */
+    background: url(box.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+#board div:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        top: 10px;
+        right: 30%;
+        font-size: 1.5em;
+    }
+    body{
+        background-repeat: no-repeat;
+    }
+    #score {
+        top: 55px;
+        font-size: 1.2em;
+    }
+    #board {
+        height: 60vh;
+        width: 100vw;
+        padding-top: 150px;
+        margin: 0;
+    }
+    #board div {
+        width: 50px;
+        height: 50px;
+    }
+}
